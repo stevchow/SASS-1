@@ -1,0 +1,50 @@
+/*COMMON SASS*/
+body 
+  font-family: $font-stack-garamond
+
+h1,h2,h3,h4,h5,h6
+  font-family: $sans-serif-2
+  text-transform: uppercase
+
+h2 
+  font-size: 3em
+
+.wrapper 
+  margin-left:auto
+  margin-right:auto
+  padding: 10px
+
+header
+  +clearfix
+  padding: 40px 40px 0
+
+.brand
+  +hide-text
+  background: center no repeat
+  height: 125px
+  width: 125px
+  float: left
+  margin: 15px 0 
+
+  +retina
+    background-image: url(../img/ownhome2.png)
+    background-size: 125px 125px
+
+a 
+  color: $brand-dark
+  border-bottom: solid 1px $brand-dark
+  &:hover
+    color: $brand-primary
+
+section, aside, article
+  margin-top: 40px
+  margin-bottom: 40px
+  +clearfix
+
+#{$all-buttons}
+  font-family: $sans-serif
+  background: $brand-primary
+
+  &:hover
+    background: shade($brand-primary, 10%)
+
